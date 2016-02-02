@@ -27,6 +27,7 @@ attribute :user, :kind_of => String, :default => 'redis'
 
 attribute :sentinel_defaults, :kind_of => Hash
 attribute :sentinels, :kind_of => Array
+attribute :version, :kind_of => [ String, FalseClass ], :default => false
 
 def initialize(name, run_context=nil)
   super
